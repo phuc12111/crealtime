@@ -1,0 +1,679 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Chợ Bot - test</title>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="author" content="chobot.vn@gmail.com" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Chợ mua/bán/cho thuê robot thuật toán chứng khoán, phái sinh, stock, forex, bitcoin, future" />
+<meta name="keywords" content="chứng khoán, chứng khoán hàng ngày, nhận định thị trường, robot chứng khoán, robot, phái sinh, cơ sở, tín hiệu bot, bot, thuật toán" />
+<meta name="format-detection" content="telephone=no" />
+
+<meta property="og:url" content="https://chobot.vn/bot/detail?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8" />
+<meta property="og:site_name" content="Chợ bot - Chợ giao dịch robot thuật toán chứng khoán" />
+<meta property="og:title" content="test" />
+<meta property="og:description" content="Chợ mua/bán/cho thuê robot thuật toán chứng khoán, phái sinh, stock, forex, bitcoin, future" />
+<meta property="og:locale" content="vi" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/storage/upload/avatars/1573.png" />
+<meta property="og:image:width" content="380" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="Chợ bot - Chợ giao dịch robot thuật toán chứng khoán" />
+
+<meta name="twitter:card" content="test" />
+<meta name="twitter:site" content="@chobot.vn" />
+<meta name="twitter:creator" content="ZhangKhoa @ (+84)908204305" />
+<meta name="twitter:title" content="test" />
+<meta name="twitter:description" content="Chợ mua/bán/cho thuê robot thuật toán chứng khoán, phái sinh, stock, forex, bitcoin, future" />
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<link rel="icon" href="/favicon.png" type="image/png" />
+<link rel="shortcut icon" href="/favicon.png" type="image/png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="/assets/css/chobot.css?v=1.1.1" rel="stylesheet" />
+
+    <link href='/assets/css/plugins/bootstrap-table.css' rel='stylesheet'><link href='/assets/css/plugins/bootstrap-table-filter-control.css' rel='stylesheet'>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/core/core.min.js"></script>
+    
+    <script defer src='/assets/js/plugins/bootstrap-table.min.js'></script><script defer src='/assets/js/plugins/bootstrap-table-filter-control.min.js'></script><script defer src='/assets/js/plugins/bootstrap-table-locale-all.min.js'></script>
+        <script async src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(function(OneSignal) {
+            OneSignal.init({
+                appId: "b7df23e3-263c-49f8-a3b6-f72fb3a709a9",
+            }).then(e => {
+                OneSignal.login("0559503509");
+            });
+        });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFD0YYXVX4"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); } gtag('js', new Date());gtag('config', 'G-XFD0YYXVX4'); gtag('config', 'G-M1M7LF1N5B');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1M7LF1N5B"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-M1M7LF1N5B');</script>
+    
+</head>
+<body class="sidebar-mini ">
+    <div class="wrapper">
+        
+<div class="navbar-minimize-fixed">
+    <button class="minimize-sidebar btn btn-link btn-just-icon">
+        <i class="tim-icons icon-align-center visible-on-sidebar-regular text-muted"></i>
+        <i class="tim-icons icon-bullet-list-67 visible-on-sidebar-mini text-muted"></i>
+    </button>
+</div>
+<div class="sidebar">
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li>
+                <a href="/bot/">
+                    <i class="tim-icons icon-cart"></i>
+                    <p>Chợ Bot</p>
+                </a>
+            </li>
+            <li class="">
+                <a href="/bot/mybot">
+                    <i class="tim-icons icon-atom"></i>
+                    <p>Bot của tôi</p>
+                </a>
+            </li>
+            <li>
+                <a href="/bot/hive">
+                    <i class="tim-icons icon-molecule-40 text-success"></i>
+                    <p><span class="text-success">TỔ BOT</span> <span class="badge-success mx-2 py-1 px-2 rounded small">new</span></p>
+                </a>
+            </li>
+            <li class="d-none">
+                <a href="/bot/myaccounts">
+                    <i class="tim-icons icon-cloud-upload-94"></i>
+                    <p>Triển khai</p>
+                </a>
+            </li>
+            <li>
+                <a href="/indicators/">
+                    <i class="tim-icons icon-paper"></i>
+                    <p>Thư viện Robot</p>
+                </a>
+            </li>
+            <li>
+                <a href="/chart/">
+                    <i class="tim-icons icon-chart-bar-32"></i>
+                    <p>Biểu đồ kỹ thuật</p>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="collapse" href="#ami" >
+                    <img src="/assets/img/amibroker.png" atl="Công cụ cho AmiBroker" style="float:left;height: 26px;margin-right:19px;">
+                    <p>
+                        AmiBroker
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div id="ami" class="collapse">
+                    <ul class="nav">
+                        <li>
+                            <a href="/products/amibroker/data/">
+                                <span class="sidebar-mini-icon">DP</span>
+                                <span class="sidebar-normal"> Data plugin @2023 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/products/amibroker/api/">
+                                <span class="sidebar-mini-icon">AP</span>
+                                <span class="sidebar-normal"> API đặt lệnh </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="">
+                <a href="/products/ftrader/">
+                    <img src="/assets/img/ftrader.ico" atl="FTrader" style="float:left; height: 26px;margin-right:19px;">
+                    <p>FTrader</p>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="collapse" href="#vps" >
+                    <img src="/assets/img/vps.ico" atl="Giải pháp trên nền tảng SmartPro/SmartEasy" style="float:left;height: 26px;margin-right:19px;">
+                    <p>
+                        Giải pháp VPS
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div id="vps" class="collapse">
+                    <ul class="nav">
+                        <li>
+                            <a href="/products/satbot/">
+                                <span class="sidebar-mini-icon">RT</span>
+                                <span class="sidebar-normal"> Robot tích hợp </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/products/copytrade/">
+                                <span class="sidebar-mini-icon">CT</span>
+                                <span class="sidebar-normal"> CopyTrade </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/products/vpssim/">
+                                <span class="sidebar-mini-icon">GL</span>
+                                <span class="sidebar-normal"> Giả lập Phái sinh 24x7 </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="/products/tradingview/">
+                    <img src="/assets/img/tradingview.ico" atl="TradingView" style="float:left; height: 26px;margin-right:19px;">
+                    <p>TradingView</p>
+                </a>
+            </li>
+            <li>
+                <a href="/products/vndirect/">
+                    <img src="/assets/img/vndirect.ico" atl="VNDirect" style="float:left; height: 26px;margin-right:19px;">
+                    <p>VNDirect</p>
+                </a>
+            </li>
+            <li class="d-none">
+                <a href="https://zalo.me/g/oikdpe860" target="_blank">
+                    <img title="Room Zalo" src="/assets/img/zalo-icon-60x60.png" alt="zalo-icon" style="float:left; height: 26px;margin-right:19px;">
+                    <p>Hỗ trợ Zalo</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>        <div class="main-panel">
+            
+<nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+    <div class="container-fluid">
+        <div class="navbar-wrapper">
+            <div class="navbar-minimize d-inline">
+                <button class="minimize-sidebar btn btn-link btn-just-icon" rel="tooltip" data-original-title="Sidebar toggle" data-placement="right">
+                    <i class="tim-icons icon-align-center visible-on-sidebar-regular"></i>
+                    <i class="tim-icons icon-bullet-list-67 visible-on-sidebar-mini"></i>
+                </button>
+            </div>
+            <div class="navbar-toggle d-inline">
+                <button type="button" class="navbar-toggler">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <a class="navbar-brand" href="/">Chợ Bot</a>
+        </div>
+        <button id="right-navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+            <a href="/chart/satbot/admin?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8&t=1720925270" class="nav-link text-warning" title="Hiệu chỉnh Bot">
+                <i class="fa fa-line-chart text-warning"></i>
+                HIỆU CHỈNH BOT
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/bot/users?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8" class="nav-link text-warning" title="Danh sách Người dùng">
+                <i class="fa fa-user-circle text-warning"></i>
+                NGƯỜI DÙNG
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/bot/config?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8" class="nav-link text-warning" title="Cài đặt bot">
+                <i class="fa fa-cog text-warning"></i>
+                CÀI ĐẶT BOT
+            </a>
+        </li>
+    
+            <li class="nav-item">
+            <a class="nav-link text-success" title="Đăng ký sử dụng bot" data-toggle="modal" data-target="#frm-bot-register" style="cursor:pointer;">
+                <i class="fa fa-unlock text-success"></i>
+                ĐĂNG KÝ
+            </a>
+        </li>
+        <li class="nav-item">
+        <a href="/bot/backtest?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8 " class="nav-link text-success" title="Kết quả Backtest">
+            <i class="fa fa-list text-success"></i>
+            BACKTEST
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/bot/" class="nav-link text-success" title="Danh sách bot">
+            <i class="fa fa-shopping-cart text-success"></i>
+            DANH SÁCH BOT
+        </a>
+    </li>
+                                                <li class="nav-item">
+                    <a href="/profile" class="nav-link" title="Thông tin tài khoản">
+                        <i class="d-none tim-icons icon-single-02 text-success" ></i>
+                        <img src="/storage/upload/avatars/1573.png" alt="Thông tin tài khoản" class="avatar" style="width:24px;height:24px;" />
+                        <p class="d-lg-none">
+                            Thông tin Tài khoản
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link" title="Đăng xuất">
+                        <i class="tim-icons icon-button-power text-danger"></i>
+                        <p class="d-lg-none">
+                            Đăng xuất
+                        </p>
+                    </a>
+                </li>
+                                <li class="separator d-lg-none"></li>
+            </ul>
+        </div>
+    </div>
+</nav><style>
+    @media (max-width:768px) {
+
+        nav.navbar {
+            padding: 4px !important;
+        }
+
+        .main-panel>.content {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            padding-top: 40px !important;
+        }
+
+        #chartFrame {
+            width: 100%;
+            height: calc(100vh - 40px);
+        }
+
+        .footer {
+            display: none;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:1199.98px) {
+
+        nav.navbar {
+            padding: 4px !important;
+        }
+
+        .main-panel>.content {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            padding-top: 40px !important;
+            width: 100vw;
+        }
+
+        #chartFrame {
+            width: 100%;
+            height: calc(100vh - 40px);
+        }
+
+        .footer {
+            display: none;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        nav.navbar {
+            padding: 4px !important;
+        }
+
+        .main-panel>.content {
+            padding-right: 10px;
+            padding-top: 50px !important;
+        }
+
+        .sidebar {
+            margin-top: 55px !important;
+        }
+
+        .sidebar-mini .main-panel>.content {
+            padding-left: 110px;
+        }
+
+        #chartFrame {
+            width: 100%;
+            height: calc(100vh - 60px);
+        }
+
+        .footer {
+            display: none;
+        }
+    }
+</style>
+<div class="content">
+    <iframe id="chartFrame" src="/chart/satbot/client?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8">
+    </iframe>
+
+    <div class="modal fade" id="modal-update-notification" tabindex="-1" role="dialog" aria-labelledby="modal-script-title" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" style="transform: translateY(10%);">
+            <div class="modal-content" style="width:fit-content">
+                <div class="modal-header text-dark">
+                    <h4 class="modal-title font-weight-bold" id="modal-term-publish-title">Chợ Bot version 2.0</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-dark">
+                    <i>Kính gửi Quý Khách,</i>
+                    <br />
+                    Chúng tôi xin chân thành cảm ơn Quý Khách đã tin tưởng và sử dụng chợ bot trong thời gian vừa qua. Nhằm nâng cao chất lượng dịch vụ, chúng tôi xin thông báo về việc nâng cấp lên phiên bản 2.0 với những cải tiến quan trọng như sau:
+                    <br />
+                    <ul>
+                        <li class="text-dark">
+                            Nâng cấp sự ổn định: Phiên bản mới sẽ mang lại sự ổn định vượt trội hơn, giúp Quý Khách yên tâm hơn khi sử dụng dịch vụ.
+                        </li>
+                        <li class="text-dark">
+                            Khắc phục nhiễu tín hiệu: Chúng tôi đã xử lý triệt để các sự cố liên quan đến nhiễu tín hiệu, đảm bảo dữ liệu và tín hiệu được truyền tải chính xác và nhanh chóng.
+                        </li>
+                        <li class="text-dark">
+                            Hỗ trợ đầy đủ các hàm quan trọng tương tự như AmiBroker. Mức độ tương thích hơn 90%, giúp Quý Khách có thể áp dụng các phương pháp phân tích và chiến lược giao dịch hiệu quả hơn.
+                        </li>
+                    </ul>
+                    <b>Lưu ý:</b> vì phiên bản 2.0 có một số khác biệt so với dữ liệu cũ, chúng tôi khuyến nghị Quý Khách, nếu tài khoản của Quý Khách đang có <b>xu hướng ngược với bot</b>, vui lòng <b>đóng vị thế và chờ tín hiệu mới</b> từ phiên bản nâng cấp.
+                    <br />
+                    Rất mong Quý Khách tiếp tục ủng hộ và đồng hành cùng chúng tôi.
+                    <br />
+                    Trân trọng,
+                    <br />
+                    <br />
+                    <i>[Chợ Bot]</i>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button id="btn-v2-notification-dismiss" type="button" class="btn btn-secondary m-2 p-2" data-dismiss="modal">Đóng lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(() => {
+            // var key = "dismiss-v2-upgrade-notification";
+            // var dismiss = localStorage.getItem(key);
+            // if (!dismiss) {
+            //     $("#btn-v2-notification-dismiss").click(e => {
+            //         localStorage.setItem(key, "1");
+            //     });
+
+            //     $("#modal-update-notification").modal("show");
+            // }
+        })
+    </script>
+    
+    <style>
+        #frm-bot-register .modal-dialog {
+            transform: none !important;
+        }
+
+        .modal-body table tr th,
+        .modal-body table tr td {
+            color: var(--dark) !important;
+            text-align: center;
+            padding: 0.25 !important;
+        }
+
+        .modal-body table tr th {
+            border-bottom: 1px solid var(--light);
+            padding-bottom: 0 !important;
+        }
+
+        .modal-content {
+            width: fit-content;
+        }
+
+        div.title {
+            text-align: center;
+            border-bottom: 1px solid var(--light);
+        }
+
+        span.currency {
+            font-size: 0.5rem;
+        }
+
+        .price {
+            color: #263148;
+            font-size: 0.9rem;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .discount {
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .price-final {
+            font-size: 1rem;
+            white-space: nowrap;
+            color: var(--red);
+            font-weight: bolder;
+        }
+
+        @media (max-width: 575.98px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+        
+    </style>
+
+    <div id="frm-bot-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="tim-icons icon-simple-remove"></i>
+                    </button>
+                    <h3 class="modal-title" id="myModalLabel">ĐĂNG KÝ SỬ DỤNG BOT</h3>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="d-none row m-0 p-0 justify-content-center" >
+                            <div class="col-6 col-md-auto m-0 p-2">
+                                <div class="title">1 tháng</div>
+                                <div class="text-center">
+                                    <span class="price">&nbsp</span><br />
+                                    <span class="discount">&nbsp</span><br />
+                                    <span class="price-final">100,000 <span class="currency">VND</span><span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-auto m-0 p-2">
+                                <div class="title">3 tháng</div>
+                                <div class="text-center">
+                                    <span class="price"><s>300,000</s> <span class="currency">VND</span></span><br />
+                                    <span class="discount">Giảm 10%</span><br />
+                                    <span class="price-final">270,000 <span class="currency">VND</span></span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-auto m-0 p-2">
+                                <div class="title">6 tháng</div>
+                                <div class="text-center">
+                                    <span class="price"><s>600,000</s> <span class="currency">VND</span></span><br />
+                                    <span class="discount">Giảm 20%</span><br />
+                                    <span class="price-final">480,000 <span class="currency">VND</span></span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-auto m-0 p-2">
+                                <div class="title">1 năm</div>
+                                <div class="text-center">
+                                    <span class="price"><s>1,200,000</s> <span class="currency">VND</span></span><br />
+                                    <span class="discount">Giảm 20%</span><br />
+                                    <span class="price-final">840,000 <span class="currency">VND</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment text-center">
+                            <!-- 0786.44.14.33 -->
+                            <span>Quý khách vui lòng thanh toán vào TK sau và gởi hình đã chuyển khoản qua Zalo <b class="text-danger">0913.204.305</b> để nhận <b>Mã kích hoạt</b></span>
+                            <div class="d-none">
+                                <img src="https://media.techcombank.com/uploads/techcombank_logo_svg_86201e50d1.svg" 
+                                    title="Ngân hàng thương mại cổ phần Kỹ thương Việt Nam" alt="" style="max-width:15rem"/>
+                            </div>
+                            <div>
+                                <span class="font-weight-bold">Ngân hàng TMCP Kỹ Thương Việt Nam</span>
+                            </div>
+                            <div>
+                                Số TK: <span class="text-danger"><b>1903 8514 1400 12</b></span>
+                            </div>
+                            <div>
+                                Chủ TK: <span class="text-danger"><b>LE HONG LAM</b></span>
+                            </div> 
+                            <div>
+                                <img src="/images/qr-tcb.png" alt="Quét mã để thanh toán" >
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <input id="bot-activation-code" type="text" class="form-control" placeholder="Nhập mã kích hoạt vào đây" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Bỏ qua</button>
+                    <button type="button" class="btn btn-primary btn-activate">Kích hoạt</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $(document).on("click", ".btn-activate", e => {
+                try {       
+                    var code = $("#bot-activation-code").val();
+                    if (!code || code == "") {
+                        error("Vui lòng nhập mã kích hoạt");
+                        return;
+                    }
+                    
+                    var guid = queryString("guid");
+                    var json = JSON.stringify({
+                        guid,
+                        code,
+                    });
+
+                    var url = `/bot/api?act=bot-activate`;
+                    $.post(url, json)
+                    .then(e => {
+                        try {
+                            if (e.rc <= 0) {
+                                error(e.rs);
+                            } else if (e.rc > 0) {
+                                success("Bạn đã đăng ký thành công, hệ thống sẽ tải lại trong giây lát hoặc bạn có thể nhấn F5 để tải lại.");
+                                setTimeout(() => {
+                                    window.location.reload();
+                                }, 1000);
+                            } else {
+                                error('Đã có lỗi, vui lòng liên hệ Zalo 0786.44.14.33');
+                            }
+                        } catch (e) {
+                            error('Đã có lỗi, vui lòng liên hệ Zalo 0786.44.14.33');
+                        }
+                    })
+                    .fail(e => {
+                        error('Đã có lỗi, vui lòng liên hệ Zalo 0786.44.14.33');
+                    });
+                } catch (e) {
+                    error(e.message);
+                }
+            })
+        })
+    </script>
+
+</div>
+
+                        <footer class="footer">
+                <div class="container-fluid">
+                    <ul class="nav">
+                        <li class="nav-item">
+                        <a href="/" class="nav-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/termofuse" class="nav-link">
+                                Điều khoản sử dụng
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/privacy" class="nav-link">
+                                Chính sách bảo mật
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            HOTLINE:&nbsp;<a href="zalo://conversation?phone=0786441433" class="text-danger font-weight-bold">0786.44.14.33</a>
+                        </li>
+                    </ul>                    
+                    <div class="copyright mr-4">
+    <span> Cày cuốc từ 2023+ bởi 108 anh em </span>
+    <a href="https://chobot.vn/bot/" target="_blank" class="px-1">chợbot.vn</a>
+</div>                </div>
+            </footer>
+                    </div>
+    </div>
+
+    <script defer src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script defer src="/assets/js/plugins/bootstrap-switch.js"></script>
+    <script defer src="/assets/js/plugins/bootstrap-selectpicker.js"></script>
+    <script defer src="/assets/js/plugins/bootstrap-notify.js"></script>
+    
+    <script defer src="/assets/js/common.js"></script>
+    <script defer src="/assets/js/chobot.js"></script>  
+
+<style>
+    .chat-zalo {
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        right: 0px;
+        width: fit-content;
+        z-index: 1030;
+    }
+
+    .chat-zalo img {
+        width: 90px;
+    }
+
+    @media (max-width: 991.98px) {
+        .chat-zalo {
+            position: fixed;
+            bottom: 15px;
+            left: 20px;
+            right: 0px;
+            z-index: 1030;
+        }
+
+        .chat-zalo img {
+            width: 60px;
+        }
+    }
+</style>
+<div class="chat-zalo">
+    <div class="">
+        <a href="https://zalo.me/g/oikdpe860" target="_blank" class="text-nowrap">
+            <img title="Click thể tham gia Room Zalo" src="/assets/img/zalo.gif" alt="zalo-icon">
+        </a>
+    </div>
+</div>
+<script type="text/javascript">
+    setTimeout(() => {
+        $("div.chat-zalo").addClass("d-none");
+    }, 30000);
+</script>
+</body>
+</html>

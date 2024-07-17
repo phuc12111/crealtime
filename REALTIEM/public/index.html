@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi_VN">
+
+<head>
+    <title>Chợ bot - test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="chobot.vn@gmail.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chợ mua/bán/cho thuê robot thuật toán chứng khoán, phái sinh, stock, forex, bitcoin, future" />
+    <meta name="keywords" content="chứng khoán, chứng khoán hàng ngày, nhận định thị trường, robot chứng khoán, robot, phái sinh, cơ sở, tín hiệu bot, bot, thuật toán" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:url" content="https://chobot.vn/chart/satbot/admin?guid=7d9d7fdb-b9ca-494b-b6f9-1eb6e9837bd8&t=1719841411" />
+    <meta property="og:site_name" content="Chợ bot - Chợ giao dịch robot thuật toán chứng khoán" />
+    <meta property="og:title" content="Chợ bot - Aai mua bot, thuê bot gì hôôn" />
+    <meta property="og:description" content="Chợ mua/bán/cho thuê robot thuật toán chứng khoán, phái sinh, stock, forex, bitcoin, future" />
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://chobot.vn/images/og-380x200.png" />
+    <meta property="og:image:width" content="380" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:image:alt" content="Chợ bot - Chợ giao dịch robot thuật toán chứng khoán" />
+    <meta name="twitter:card" content="Chợ bot - Aai mua bot, thuê bot gì hôôn" />
+    <meta name="twitter:site" content="@chobot.vn" />
+    <meta name="twitter:creator" content="ZhangKhoa @ (+84)908204305" />
+    <meta name="twitter:title" content="Chợ bot - Aai mua bot, thuê bot gì hôôn" />
+    <meta name="twitter:description" content="Chợ mua/bán/cho thuê robot thuật toán chứng khoán, phái sinh, stock, forex, bitcoin, future" />
+    <link rel="icon" href="/min.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/min.png" type="image/x-icon">
+    <link rel="icon" href="/min.png" type="image/png" />
+    <link rel="shortcut icon" href="/minh.png" type="image/png">
+    <link rel="stylesheet" href="https://static.chobot.vn/bootstrap/4.6.2/bootstrap.min.css">
+    <link rel="stylesheet" href="https://static.chobot.vn/font-awesome/4.6.0/css/font-awesome.min.css" />
+    <script src="https://static.chobot.vn/jquery/3.7.1/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFD0YYXVX4"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); } gtag('js', new Date());gtag('config', 'G-XFD0YYXVX4'); gtag('config', 'G-M1M7LF1N5B');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1M7LF1N5B"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-M1M7LF1N5B');</script>
+</head>
+
+<body>
+    <div id="tvWidgetContainer" token="a23ac394cf841cc1b93742a5e8856772db9d3ef9"></div>
+
+    <script defer="defer" src="/shared-cdd60c62.min.js"></script>
+    <script defer="defer" src="/shared-12892229.min.js"></script>
+    <script defer="defer" src="/shared-49d0a293.min.js"></script>
+    <script defer="defer" src="/shared-d2eb5610.min.js"></script>
+    <script defer="defer" src="/shared-f82e0cd2.min.js"></script>
+    <script defer="defer" src="/shared-656c0b11.min.js"></script>
+    <script defer="defer" src="/shared-d39d7386.min.js"></script>
+    <script defer="defer" src="/shared-57c20765.min.js"></script>
+    <script defer="defer" src="/shared-43a5bb79.min.js"></script>
+    <script defer="defer" src="/shared-0bc0478e.min.js"></script>
+    <script defer="defer" src="/shared-229eafb5.min.js"></script>
+    <script defer="defer" src="/bot.admin.min.js"></script>
+    <script defer="defer" src="/popper.min.js"></script>
+    <script defer="defer" src="/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../socket.io/socket.io.js"></script>
+    <script>
+        $(document).ready(function() {
+            var socket = io();
+
+            socket.on('connect', function() {
+                console.log('Connected to server');
+            });
+
+            socket.on('disconnect', function() {
+                console.log('Disconnected from server');
+            });
+
+            socket.on('newData', function(value) {
+                console.log('New data received: ' + value);
+                // Update your chart here with the new value
+                // Example: Update a div with id 'chart' to display the new value
+                $('#chart').text('Current Value: ' + value);
+            });
+        });
+    </script>
+
+    <div id="chart">Waiting for data...</div>
+</body>
+
+</html>
